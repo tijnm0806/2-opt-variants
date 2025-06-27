@@ -22,7 +22,7 @@ This file implements the Z-opt heuristic, a stricter variant of Y-opt that only 
 This utility file provides essential helper functions used throughout the repository, including distance matrix computation, tour initialization, heuristic construction methods, and tour visualization. It also contains routines for working with TSPLIB instances and generating comparative plots. While not intended to be executed on its own, it supports all algorithm files and is vital for both performance evaluation and graphical presentation.
 
 ## plot_data.py
-This script is dedicated solely to visualizing numerical results for different 2-opt variants studied in the project. It plots average tour lengths and average numbers of edge replacements against problem size, both in raw and normalized forms. Although it can be run standalone to reproduce key figures for the numerical experiments, its primary purpose is to support analysis and presentation of the experimental data in reports or presentations.
+This script is only used to visualize numerical results for different 2-opt variants. It plots average tour lengths and average numbers of edge replacements agains the instance size (number of points), both in raw and normalized forms.
 
 
 **Note:** Some parts of the code descriptions were generated with the assistance of ChatGPT (GPT-4o-mini), an AI language model developed by OpenAI.
