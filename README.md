@@ -18,6 +18,9 @@ This file implements the Y-opt heuristic, a restricted 2-opt variant that only a
 ## z_opt.py
 This file implements the Z-opt heuristic, a stricter variant of Y-opt that only accepts a 2-opt move if both new edges are better than both old edges in all pairwise comparisons. This makes Z-opt more conservative, typically resulting in fewer replacements but potentially higher-quality improvements. Like the other heuristics, it is meant to be used through main.py but can also be executed on its own for testing and visualization.
 
+## three_opt.py
+This file implements the 3-opt local search heuristic for the TSP. The function returns the improved tour, the original tour, and the number of edge replacements made. While the file is primarily intended to be called from main.py, it can also be run on its own to apply 3-opt to a random TSP instance and visualize the result.
+
 ## utils.py
 This utility file provides essential helper functions used throughout the repository, including distance matrix computation, tour initialization, heuristic construction methods, and tour visualization. It also contains routines for working with TSPLIB instances and generating comparative plots. While not intended to be executed on its own, it supports all algorithm files and is vital for both performance evaluation and graphical presentation.
 
